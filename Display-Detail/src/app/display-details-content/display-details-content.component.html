@@ -1,0 +1,12 @@
+<!-- <p>display-details-content works!</p> -->
+<input type="text" class="form-control" [(ngModel)]="disContentitems">
+<button class="btn btn-primary" (click)="displayContentDom()">
+  Display Details
+</button>
+<hr/>
+<p>{{ disContents }}</p>
+<ul>
+  <li [ngStyle]="{backgroundColor: blueBackground()}" *ngFor="let disContent of disContents; let indexOfelement=index">
+      {{ disContent }} {{indexOfelement}}
+  </li>
+</ul>
