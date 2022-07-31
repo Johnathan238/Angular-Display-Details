@@ -18,9 +18,9 @@ export class DisplayDetailsContentComponent implements OnInit {
     this.disContentitems = event.target.value
   }
 
-  blueBackground() {
-    this.disContents.indexOf( this.disContentitems) > 5 ? 'blue' : 'red'
-  }
+  // blueBackground() {
+  //   this.disContents.indexOf( this.disContentitems) > 5 ? 'blue' : 'red'
+  // }
 
   constructor() { }
 
