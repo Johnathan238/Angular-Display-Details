@@ -6,7 +6,7 @@
 <hr/>
 <p>{{ disContents }}</p>
 <ul>
-  <li *ngFor="let disContent of disContents; let indexOfelement=index">
+  <li [ngStyle]="{backgroundColor: indexOfelement >= 5 ? 'blue' : 'white'}" *ngFor="let disContent of disContents; let indexOfelement=index">
       {{ disContent }} {{indexOfelement}}
   </li>
 </ul>
